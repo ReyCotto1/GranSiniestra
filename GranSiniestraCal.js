@@ -40,7 +40,6 @@ function calendar(month) {
     var prevMonth = month - 1;
     
     var monthNames = ["Niellëx", "Aghas", "Mara", "Kathon", "Nerwe", "Kurda", "Niellëx", "Aghas", "Mara", "Kathon", "Nerwe", "Kurda"];
-    var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday"];
     var totalDays = ["30", "30", "30", "30", "30", "30", "30", "30", "30", "30", "30", "30"];
     var tempDate = new Date(tempMonth + ' 1 ,' + year);
     var tempweekday = tempDate.getDay();
@@ -63,8 +62,9 @@ function calendar(month) {
         tempweekday2++;
         i++;
     }
-    var calendarTable = "<table class='calendar'> <tr class='currentmonth'><th colspan='7'><i class='fa fa-calendar'></i>" + monthNames[roleMonth] + " " + year + "</th></tr>";
-    calendarTable += "<tr class='weekdays'>  <td>Sun</td>  <td>Mon</td> <td>Tue</td> <td>Wed</td> <td>Thu</td> <td>Fri</td> <td>Sat</td> </tr>";
+    
+    var calendarTable = "<table class='calendar'> <tr class='currentmonth'><th colspan='10'><i class='fa fa-calendar'></i>" + monthNames[roleMonth] + " " + year + "</th></tr>";
+    calendarTable += "<tr class='weekdays'>  <td>Unu</td>  <td>Duo</td> <td>Tri</td> <td>Qua</td> <td>Cin</td> <td>Sis</td> <td>Sep</td> <td>Vui</td> <td>Nou</td> <td>Deu</td> </tr>";
     calendarTable += "<tr>";
     calendarTable += padding;
     calendarTable += "</tr></table>";
