@@ -23,11 +23,15 @@ function calendar(month) {
     var currD = current.getDate();
     var currY = current.getFullYear();
     
+    var totalDays = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    var month=6;
     var roleDays = 0;
+
     var i;
-    for (i = 0; i < month+1; i++) {
-        roleDays += totalDays[i];
+    for(i=0; i<month; i++){
+    roleDays = roleDays + totalDays[i];
     }
+    roleDays = roleDays + currD;
     
     var tempMonth = month + 1;
     var prevMonth = month - 1;
