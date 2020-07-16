@@ -34,6 +34,7 @@ function calendar(month) {
     while(roleMonth>12){
         roleMonth= roleMonth-12;
     }
+    roleMonth = Math.floor(roleMonth)
     
     var tempMonth = month + 1;
     var prevMonth = month - 1;
