@@ -13,13 +13,7 @@ function calendar(month) {
     var year = current.getFullYear();
     var tempMonth = month + 1;
     var prevMonth = month - 1;
-    if (month == 1) {
-        if ((year % 100 !== 0) && (year % 4 === 0) || (year % 400 === 0)) {
-            totalFeb = 29;
-        } else {
-            totalFeb = 28;
-        }
-    }
+    
     var monthNames = ["Niellëx", "Aghas", "Mara", "Kathon", "Nerwe", "Kurda", "Niellëx", "Aghas", "Mara", "Kathon", "Nerwe", "Kurda"];
     var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday"];
     var totalDays = ["30", "30", "30", "30", "30", "30", "30", "30", "30", "30", "30", "30"];
