@@ -7,17 +7,28 @@ function calendar(month) {
     var totalFeb = "";
     var i = 1;
     var testing = "";
-    
     var current = new Date();
+    var cmonth = current.getMonth();
+    var day = current.getDate();
+    var year = current.getFullYear();
+    if (month == 1) {
+            if ((year % 100 !== 0) && (year % 4 === 0) || (year % 400 === 0)) {
+                totalFeb = 29;
+            } else {
+                totalFeb = 28;
+            }
+        }
+    var totalDays = [31, totalFeb, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     var currM = current.getMonth();
     var currD = current.getDate();
     var currY = current.getFullYear();
     
+    var roleDays = 0;
+    var i;
+    for (i = 0; i < month+1; i++) {
+        roleDays += totalDays[i];
+    }
     
-    
-    var cmonth = current.getMonth();
-    var day = current.getDate();
-    var year = current.getFullYear();
     var tempMonth = month + 1;
     var prevMonth = month - 1;
     
@@ -45,7 +56,7 @@ function calendar(month) {
         tempweekday2++;
         i++;
     }
-    var calendarTable = "<table class='calendar'> <tr class='currentmonth'><th colspan='7'><i class='fa fa-calendar'></i>" + monthNames[month] + " " + year + "198" + "</th></tr>";
+    var calendarTable = "<table class='calendar'> <tr class='currentmonth'><th colspan='7'><i class='fa fa-calendar'></i>" + monthNames[month] + " " + year + "198" + roleDays + "</th></tr>";
     calendarTable += "<tr class='weekdays'>  <td>Sun</td>  <td>Mon</td> <td>Tue</td> <td>Wed</td> <td>Thu</td> <td>Fri</td> <td>Sat</td> </tr>";
     calendarTable += "<tr>";
     calendarTable += padding;
