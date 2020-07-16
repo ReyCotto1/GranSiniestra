@@ -43,7 +43,7 @@ function calendar(month) {
     var totalDays = ["30", "30", "30", "30", "30", "30", "30", "30", "30", "30", "30", "30"];
     var tempDate = new Date(tempMonth + ' 1 ,' + year);
     var tempweekday = tempDate.getDay();
-    var tempweekday2 = tempweekday;
+    var tempweekday2 = 0;
     var dayAmount = totalDays[month];
     i=1;
     while (i <= dayAmount) {
