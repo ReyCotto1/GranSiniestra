@@ -63,7 +63,7 @@ function calendar(month) {
         tempweekday2++;
         i++;
     }
-    var calendarTable = "<table class='calendar'> <tr class='currentmonth'><th colspan='7'><i class='fa fa-calendar'></i>" + monthNames[roleMonth] + year + "</th></tr>";
+    var calendarTable = "<table class='calendar'> <tr class='currentmonth'><th colspan='7'><i class='fa fa-calendar'></i>" + monthNames[roleMonth] + " " + year + "</th></tr>";
     calendarTable += "<tr class='weekdays'>  <td>Sun</td>  <td>Mon</td> <td>Tue</td> <td>Wed</td> <td>Thu</td> <td>Fri</td> <td>Sat</td> </tr>";
     calendarTable += "<tr>";
     calendarTable += padding;
