@@ -1,6 +1,14 @@
 $(document).ready(function(){
+    
+    var month = new Date().getMonth();
+    var newMonth = "";
+    if(month > 6){
+        newMonth = 6 - month;
+    } else {
+        newMonth = month;
+    }
+    calendar(newMonth);
 
-    calendar(new Date().getMonth());
 });
 function calendar(month) {
     var padding = "";
