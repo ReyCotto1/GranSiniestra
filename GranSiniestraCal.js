@@ -45,12 +45,8 @@ function calendar(month) {
     var tempweekday = tempDate.getDay();
     var tempweekday2 = tempweekday;
     var dayAmount = totalDays[month];
-    while (tempweekday > 0) {
-        padding += "<td class='premonth'></td>";
-        tempweekday--;
-    }
     while (i <= dayAmount) {
-        if (tempweekday2 > 6) {
+        if (tempweekday2 > 9) {
             tempweekday2 = 0;
             padding += "</tr><tr>";
         }
