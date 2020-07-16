@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
-    calendar(new Date().getMonth());
-    print(new Date().getMonth())
+    calendar(3);
 });
 function calendar(month) {
     var padding = "";
