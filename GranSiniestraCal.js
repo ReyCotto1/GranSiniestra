@@ -22,9 +22,6 @@ function calendar(month) {
     var currM = current.getMonth();
     var currD = current.getDate();
     var currY = current.getFullYear();
-    
-    var totalDays = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-    var month=6;
     var roleDays = 0;
 
     var i;
@@ -32,6 +29,11 @@ function calendar(month) {
     roleDays = roleDays + totalDays[i];
     }
     roleDays = roleDays + currD;
+    roleDays = roleDays * 2;
+    var roleMonth = roleDays / 30;
+    while(roleMonth>12){
+        roleMonth= roleMonth-12;
+    }
     
     var tempMonth = month + 1;
     var prevMonth = month - 1;
@@ -60,7 +62,7 @@ function calendar(month) {
         tempweekday2++;
         i++;
     }
-    var calendarTable = "<table class='calendar'> <tr class='currentmonth'><th colspan='7'><i class='fa fa-calendar'></i>" + monthNames[month] + " " + year + "</th></tr>";
+    var calendarTable = "<table class='calendar'> <tr class='currentmonth'><th colspan='7'><i class='fa fa-calendar'></i>" + monthNames[month] + roleMonth + year + "</th></tr>";
     calendarTable += "<tr class='weekdays'>  <td>Sun</td>  <td>Mon</td> <td>Tue</td> <td>Wed</td> <td>Thu</td> <td>Fri</td> <td>Sat</td> </tr>";
     calendarTable += "<tr>";
     calendarTable += padding;
