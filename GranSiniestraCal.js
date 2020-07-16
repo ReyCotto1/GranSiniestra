@@ -60,7 +60,7 @@ function calendar(month) {
         i++;
     }
     
-    var calendarTable = "<table class='calendar'> <tr class='currentmonth'><th colspan='10'><i class='fa fa-calendar'></i>" + monthNames[roleMonth] + " " + year + "</th></tr>";
+    var calendarTable = "<table class='calendar'> <tr class='currentmonth'><th colspan='10'><i class='fa fa-calendar'></i>" + "   " +monthNames[roleMonth] + " " + year + "</th></tr>";
     calendarTable += "<tr class='weekdays'>  <td>Unu</td>  <td>Duo</td> <td>Tri</td> <td>Qua</td> <td>Cin</td> <td>Sis</td> <td>Sep</td> <td>Vui</td> <td>Nou</td> <td>Deu</td> </tr>";
     calendarTable += "<tr>";
     calendarTable += padding;
