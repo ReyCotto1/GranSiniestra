@@ -45,6 +45,7 @@ function calendar(month) {
     var tempweekday = tempDate.getDay();
     var tempweekday2 = tempweekday;
     var dayAmount = totalDays[month];
+    i=1;
     while (i <= dayAmount) {
         if (tempweekday2 > 9) {
             tempweekday2 = 0;
