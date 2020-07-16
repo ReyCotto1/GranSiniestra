@@ -20,9 +20,9 @@ function calendar(month) {
             totalFeb = 28;
         }
     }
-    var monthNames = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+    var monthNames = ["Niellëx", "Aghas", "Mara", "Kathon", "Nerwe", "Kurda"];
     var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday"];
-    var totalDays = ["31", "" + totalFeb + "", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31"];
+    var totalDays = ["30", "30", "30", "30", "30", "30"];
     var tempDate = new Date(tempMonth + ' 1 ,' + year);
     var tempweekday = tempDate.getDay();
     var tempweekday2 = tempweekday;
