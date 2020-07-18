@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    calendar(new Date().getMonth());
+    calendar(3);
 });
 function calendar(month) {
     var padding = "";
@@ -8,7 +8,7 @@ function calendar(month) {
     var i = 1;
     var testing = "";
     var current = new Date();
-    var cmonth = current.getMonth();
+    var cmonth = 3;
     var day = current.getDate();
     var year = current.getFullYear();
     if (month == 1) {
@@ -19,7 +19,7 @@ function calendar(month) {
             }
         }
     var totalDays = [31, totalFeb, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-    var currM = current.getMonth();
+    var currM = 3;
     var currD = current.getDate();
     var currY = current.getFullYear();
     var roleDays = 0;
