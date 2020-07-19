@@ -1,69 +1,9 @@
 $(document).ready(function(){
 
-    calendar(new Date().getMonth());
+    texto();
 });
-function calendar(month) {
-    var padding = "";
-    var totalFeb = "";
-    var i = 1;
-    var testing = "";
-    var current = new Date();
-    var cmonth = current.getMonth();
-    var day = current.getDate();
-    var year = current.getFullYear();
-    if (month == 1) {
-            if ((year % 100 !== 0) && (year % 4 === 0) || (year % 400 === 0)) {
-                totalFeb = 29;
-            } else {
-                totalFeb = 28;
-            }
-        }
-    var totalDays = [31, totalFeb, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-    var currM = current.getMonth();
-    var currD = current.getDate();
-    var currY = current.getFullYear();
-    var roleDays = 0;
 
-    var i;
-    for(i=0; i<month; i++){
-    roleDays = roleDays + totalDays[i];
-    }
-    roleDays = roleDays + currD;
-    roleDays = roleDays * 2;
-    var roleMonth = roleDays / 30;
-    while(roleMonth>12){
-        roleMonth= roleMonth-12;
-    }
-    roleMonth = Math.floor(roleMonth)
-    
-    var tempMonth = month + 1;
-    var prevMonth = month - 1;
-    
-    var monthNames = ["Niellëx", "Aghas", "Mara", "Kathon", "Nerwe", "Kurda", "Niellëx", "Aghas", "Mara", "Kathon", "Nerwe", "Kurda"];
-    var totalDays = ["30", "30", "30", "30", "30", "30", "30", "30", "30", "30", "30", "30"];
-    var tempDate = new Date(tempMonth + ' 1 ,' + year);
-    var tempweekday = tempDate.getDay();
-    var tempweekday2 = 0;
-    var dayAmount = totalDays[month];
-    i=1;
-    while (i <= dayAmount) {
-        if (tempweekday2 > 9) {
-            tempweekday2 = 0;
-            padding += "</tr><tr>";
-        }
-        if (i == day && month == cmonth) {
-            padding += "<td class='currentday'>" + i + "</td>";
-        } else {
-            padding += "<td class='currentmonth'>" + i + "</td>";
-        }
-        tempweekday2++;
-        i++;
-    }
-    
-    var calendarTable = "<table class='calendar'> <tr class='currentmonth'><th colspan='10'><i class='fa fa-calendar'></i>" + "   " +monthNames[roleMonth] + " " + year + "</th></tr>";
-    calendarTable += "<tr class='weekdays'>  <td>Unu</td>  <td>Duo</td> <td>Tri</td> <td>Qua</td> <td>Cin</td> <td>Sis</td> <td>Sep</td> <td>Vui</td> <td>Nou</td> <td>Deu</td> </tr>";
-    calendarTable += "<tr>";
-    calendarTable += padding;
-    calendarTable += "</tr></table>";
-    document.getElementById("calendar").innerHTML += calendarTable;
+function texto() {
+    var innerText = "<br><h3>Ambientación</h3> Estábamos condenados a la mediocridad. <br>La magia se resbalaba de nuestras manos como arena entre los dedos hasta que llegó el haxio. <br>Los hombres aprendimos a ser semidioses: a manipular lo que estaba a nuestro alrededor como arquitectos divinos. <br>Ya no existía la pobreza, ni la simpleza. Cada uno de nosotros brillaba con luz propia. Fueron los años más prósperos de Gran Siniestra. <br>Todo lo que sube baja; toda luz tiene su oscuridad. La magia tiene un alto precio y no quisimos darnos cuenta. Mientras obramos, nuestra tierra agonizaba. El equilibrio entre el orden y el caos se emborronaba. Los más avaros no quedaron satisfechos con su poder, sino que desearon más y más: intentaron retar a la muerte, romper cada límite. Y fuimos castigados por nuestra arrogancia. <br><br>La tierra empezó a parir criaturas inimaginables, dignas de las pesadillas de los atormentados. Esos monstruos y criaturas, fueran lo que fueran, empezaron a arrinconarnos. <br>Fue ahí el fin de nuestra Era de Gloria, y caímos en la Era Oscura. Miles de nosotros fuimos masacrados, arrinconados: con una amenaza ahí fuera que trajo miseria. Y, la miseria, produjo enemigos entre nosotros. <br>Quien fue una vez tu hermano, ahora solo era un posible traidor más. Ni el más ingenioso de los trovadores ha sido capaz de cantar qué fue lo que sucedió. <br>Como una mancha de tinta en nuestra historia, cuando quisimos darnos cuenta, se habían alzado Las Siete Casas. <br><br>De entre todas las casas, sólo siete sobrevivieron a la vasta guerra que regó de sangre todo Gran Siniestra, tomando un control que, ilusamente, creímos tener. <br>Las guerras no cesaron. <br>Una tras otra iban mermando todo lo que conocíamos.<br><br>Todo parecía perdido hasta que un octavo jugador entró en la partida. Krylden Ve’anor, o como otros lo llamábamos, el rey caído. Una de las casas más antiguas de Gran Siniestra resurgió de sus cenizas para acabar con el reinado de las Siete Casas y prometerle al continente una era de paz. <br><br>Y así fue. <br>La paz llegó, pero a qué precio. <br>La Purga, aquellas persecuciones sedientas de sangre. La prohibición de la magia. <br>Si no podía haber paz, se forzaría al mundo a la paz. <br>Gran Siniestra unificada, pobre pero tranquila, parecía ahora un milagro caído del cielo. Pero como todo lo bueno en este mundo, poco duró.<br><br>Los rumores sobre Kael'entia volvieron. La magia de sangre. Aquel cuento de viejas. <br>¿Que si yo creía en ello? Pues claro que no, igual que tampoco creía en los dopplers... hasta que les vi. Aquel cuento era tan viejo que ya ni se usaba para asustar a los niños. La magia de sangre es un poder especial y peligroso, que lleva al hombre al límite de su cordura, que lo convierte en monstruo. <br>¿Sabes por qué reinaron las Siete Casas? ¿Sabes porque fueron esas Siete? Por su poder. Cada uno con su poder podía ser más fuerte que el anterior. Cada familia, durante generaciones, han heredado poderes sobrenaturales, más allá de cualquier runa, más allá de cualquier hechizo. <br>Kael'entia es la magia de sangre, un poder oscuro y siniestro, un poder con el que puedes conseguir la magia de las otras casas y usarlo a tu antojo. ¿Sabes cómo? Devorando a una persona que lo posea. Así empezó la Era de los Antropófagos.<br><br><br><br>";
+    document.getElementById("textoAmbientacion").innerHTML += innerText;
 }
