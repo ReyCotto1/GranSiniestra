@@ -50,22 +50,6 @@ function texto() {
     document.getElementById("textoNarradores").innerHTML += innerText;
     
     innerText = "Aquí se explicará un poco el proceso o requisitos necesarios para formar parte de la administración, tanto Administradores, Moderadores y Narradores.<br><sub>Administradores</sub>Para ser administrador del foro es necesario conocer muy bien el mismo y el porqué las mecánicas son como son.<br><br>-Serán necesario al menos 7-12 meses en el foro, de forma muy activa.<br>-Haber demostrado ser una persona de confianza. <br>Tener permisos de Admin es algo muy serio y para lo cual hay que demostrar que se puede confiar en esa persona no solo para organizar el foro, sino para cuidar de él y de los usuarios. <br>Debido también a malas experiencias pasadas, ganarse este cargo será muy complicado.<br><br><sub>Moderador</sub>Se encargan de hacerle la administración más fácil a los Administradores.<br>Tareas como registros, peticiones, fichas y similares son su principal tarea.<br>Puede haber moderadores exclusivos para revisión de hechizo y técnicas o incluso moderación de combate, pero estos necesitarán demostrar más conocimientos sobre el foro que aquellos que se encarguen de tareas más sencillos.<br><br>-Demostrar que conocen lo básico del foro y el porqué es como es.<br>-Tener al menos 5 meses en el foro, aproximadamente.<br><br><sub>Narradores</sub>Los narradores son personas que, si bien deben conocer muy bien el foro, su única responsabilidad está en las tramas narradas (pueden ser contratos, batidas, estudios, eventos o tramas).<br>Son responsables de realizar buenas narraciones y de que los personajes estén agusto en ellas.<br><br>-Deben conocer bien los sistemas, y si realizan narraciones bélicos, conocer bien el sistema de combate.<br>-Igualmente, deben tener buena ortografía y comprensión en sus escritos. No puede haber un solo narrador cuyos textos resulten poco comprensibles o pesados de leer (por ejemplo, párrafos y párrafos sin un solo punto).<br>-Tener al menos 5 meses en el foro, aproximadamente.<br><br>Si bien en las normas se especifican ciertos apartados donde el narrador tiene un poder casi total dentro de sus narraciones, esto pasa siempre por administración.";
-    document.getElementById("textoStaff").innerHTML += innerText;
-    
-    innerText = "";
-    document.getElementById("texto").innerHTML += innerText;
-    
-     innerText = "";
-    document.getElementById("texto").innerHTML += innerText;
-    
-     innerText = "";
-    document.getElementById("texto").innerHTML += innerText;
-    
-     innerText = "";
-    document.getElementById("texto").innerHTML += innerText;
-    
-     innerText = "";
-    document.getElementById("texto").innerHTML += innerText;
-    
+    document.getElementById("textoStaff").innerHTML += innerText; 
   
 }
