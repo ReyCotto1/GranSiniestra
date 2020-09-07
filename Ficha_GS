@@ -1,0 +1,179 @@
+:root{
+  --veanor: #483c78;
+  --kalarch: #af1a1b;
+  --Reshkarch: #fd9e40;
+  --gallarion: #8ba15f;
+  --adrien: #008791;
+  --rehgis: #a6b7c4;
+  --vaelekin: #a6b7c4;
+  --blavyr: #a6b7c4;
+  --hunter: #a6b7c4;
+  --kaerlohr: #a6b7c4;
+  --civil: #a6b7c4;
+}
+.ficha{
+  width: 650px;
+  height: 700px;
+  background: #000;
+  margin: 0 auto;
+  color: #ebebeb;
+}
+.caja{
+  width: 490px;
+  height: 700px;
+  float:left;
+}
+.cajasuperior{
+  width: 470px;
+  height: 170px;
+}
+.imagenmini{
+  width: 100px;
+  height: 150px;
+  float:left;
+  background: cover;
+  margin: 10px 0px 0px 10px;
+}
+.nombre{
+  font-size: 40px;
+  text-transform: none;
+  letter-spacing: 2px;
+  font-family: MediciText;
+  font-weight: 400;
+  line-height: 80%;
+  position:relative;
+  top: 10px;
+  width: 330px;
+  float: right;
+}
+.apellido{
+  font-family: cambria;
+}
+.cajainfo{
+  width: 330px;
+  height: 90px;
+  float:right;
+  position:relative;
+  top: 20px;
+}
+.datos{
+  width: 90px;
+  height: 37px;
+  display: inline-block;
+  padding: 5px 3px 3px 10px;
+  margin: 1px 2px 1px 0px;
+ 
+  text-transform: lowercase;
+  color: #ebebeb;
+  font-family: times;
+  letter-spacing: 3px;
+  font-size: 10px;
+  font-style: oblique;
+  line-height: 150%;
+}
+.datos inf{
+  font-size: 13px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: none;
+  margin-top: -13px;
+}
+.divider{
+  margin: 14px auto;
+  width: 430px;
+  height: 0.7px;
+  background-image: linear-gradient(to right,transparent,#FFFFFF,#FFFFFF,transparent);
+  position:relative;
+  top: 85px;
+}
+.FICHAtabs {
+ margin: 0px auto; 
+ position: relative;
+ width: 450px; 
+ height: 420px;
+ margin-top: 80px;
+}
+.FICHAtab {
+ float: left;
+}
+.FICHAtab label {
+    display: block;
+    margin-right: 70px;
+    position: relative;
+    left: 60px;
+    top: -70px;
+    z-index: 3;
+ font-size: 32px;
+}
+.FICHAtab input[type=radio]:checked ~ label {
+ z-index: 2;
+ color: #ebebeb;
+}
+.FICHAtab input[type=radio] {
+ display: none;
+}
+.FICHAcontent {
+ position: absolute;
+ top: 0px;
+ bottom: 0px;
+ left: 0px;
+ right: 0px;
+ background: #000;
+ padding: 20px;
+  overflow: auto;
+}
+.FICHAtab input[type=radio]:checked ~ label ~ .FICHAcontent {
+ z-index: 1;
+}
+.titulo{
+    height: 40px;
+    font-size: 40px;
+    padding-top: 10px;
+  padding-left:20px;
+  text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: times;
+    font-weight: 100;
+}
+.subtitulo{
+    width: fit-content;
+    font-size: 25px;
+    text-transform: none;
+    letter-spacing: 1px;
+    font-family: cambria;
+    font-weight: 100;
+    border-bottom: 1px solid #ebebeb;
+    margin-left: 30px;
+}
+.texto{
+  padding: 10px 5px 10px 0px;
+  text-align: justify;
+  line-height: 110%;
+  font-family: calibri;
+  font-weight: lighter;
+  letter-spacing: 0.2px;
+}
+.imagenderecha{
+  width: 160px;
+  height: 700px;
+  background-size: cover;
+  float:right; 
+}
+.degradado{
+  width: 160px;
+  height: 700px;
+  float:right; 
+}
+.fraseimagen{
+  text-transform: lowercase;
+  color: #ebebeb;
+  font-family: times;
+  letter-spacing: 3px;
+  font-size: 10px;
+  font-style: italic;
+  width: 140px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 500px;
+}
