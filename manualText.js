@@ -150,6 +150,6 @@ function texto() {
     innerText = "<br><h3>Herborismo</h3><br><br>El herborismo es la actividad centrada en el uso de las plantas, especialmente de forma medicinal.<br>Es una ciencia mucho más simple que la Alquimia, y que hace uso de los stats de Herborismo y Medicina.<br><br>Gracias a las habilidades y conocimientos sobre plantas, con este oficio se pueden realizar ünguentos sencillos para aprovecharse de los beneficios de las mismas.<br>La principal diferencia entre Herborismo y Alquimia es que el primero sólo utiliza plantas como ingredientes. Ni partes de monstruos, ni minerales, ni tampoco sustancias básicas.<br>Para realizar cualquier receta de Herborismo solo hace falta recolectar las plantas necesitadas y tener los puntos necesarios en Herborismo (o Medicina si lo indica).<br><br><sub>Plantas</sub><br><br>";
     document.getElementById("textoHerborismo").innerHTML += innerText;
     
-    innerText = "En el foro contamos con varios tipos de roles (sin incluir los Eventos y Tramas Generales del foro):<br><br>";
+    innerText = "En el foro contamos con varios tipos de roles (sin incluir los Eventos y Tramas Generales del foro):<br><br>— <b>Roles sociales</b>: son aquellos roles meramente sociales entre uno o varios personajes. Los roles sociales incluyen situaciones cotidianas, de recolección de ingredientes alquímicos y combate contra monstruos. Pueden ser tanto en presente como en pasado.<br><br>";
     document.getElementById("textoroldos").innerHTML += innerText;
 }
